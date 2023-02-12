@@ -20,28 +20,28 @@ app.use(express.static('public'));
 
 
 // ruta principal + controlador manejador de la vista principal
-// app.get("/", (req, res) => {
-//     res.render('home', {
-//         nombre:'Fernando Herrera',
-//         titulo:'Curso de Node'
-//     });
-// });
+app.get("/home", (req, res) => {
+    res.render('home', {
+        nombre:'Fernando Herrera',
+        titulo:'Curso de Node'
+    });
+});
 
-// app.get("/generic", (req, res) => {
-//     res.render('generic', {
-//         nombre:'Fernando Herrera',
-//         titulo:'Curso de Node'
-//     });
-// });
+app.get("/generic", (req, res) => {
+    res.render('generic', {
+        nombre:'Fernando Herrera',
+        titulo:'Curso de Node'
+    });
+});
 
-// app.get("/elements", (req, res) => {
-//     res.render('elements', {
-//         nombre:'Fernando Herrera',
-//         titulo:'Curso de Node'
-//     });
-// });
+app.get("/elements", (req, res) => {
+    res.render('elements', {
+        nombre:'Fernando Herrera',
+        titulo:'Curso de Node'
+    });
+});
 
-app.get("*", (req, res) => {
+app.get("/angular", (req, res) => {
     res.sendFile( __dirname + '/public/index.html');
 });
 
