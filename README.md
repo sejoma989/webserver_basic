@@ -1,6 +1,9 @@
 # WEBSERVER BASICO
 
-Template de un webserver para servir archivos o paginas estaticas.
+Webserver que permite servir paginas y archivos estaticos optimizado con hbs.
+
+Front: HTML, CSS, JS | 
+Back: NodeJS & express ( dotenv, hbs)
 
 ## Instalacion
 
